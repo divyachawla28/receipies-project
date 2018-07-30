@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-xs-12">
+		<app-shopping-edit></app-shopping-edit>
+		<hr>
+		<ul class="list-group">
+			<!-- to display an array of integredients -->
+			<a class="list-group-item" style="cursor: pointer;" *ngFor=" let integredients of integredient">
+				{{ integredients.name}} ({{integredients.amount}})
+			</a>
+		</ul>
+	</div>
+</div>

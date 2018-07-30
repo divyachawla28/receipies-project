@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-header (featureSelected)="onSelection($event)"></app-header>
+      <app-receipes *ngIf="lookedFeature === 'receipe'"></app-receipes>
+      <app-shopping-list *ngIf="lookedFeature !== 'receipe'"></app-shopping-list>
+
+    </div>
+  </div>
+</div>
